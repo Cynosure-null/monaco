@@ -1,0 +1,21 @@
+[package]
+name = "monaco"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mongodb = "2.1"
+bson = { version = "2", features = ["chrono-0_4"] }
+actix-web = "4.4.0"
+serde = { version = "1.0.188", features = ["derive"] }
+diesel = { version = "1.4", features = ["postgres", "r2d2", "uuid", "chrono"] }
+dotenvy = "0.15.7"
+tokio-postgres = "0.7.10"
+tokio = "1.32.0"
+futures = "0.3.28"
+futures-util = "0.3.28"
+env_logger = "0.10.0"
+reqwest = "0.11.22"
+actix-cors = "0.6.4"
